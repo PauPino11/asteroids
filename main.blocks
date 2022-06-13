@@ -1,0 +1,35 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id=")].7iKIPye[TvKSZ+G=r">Player</variable><variable type="KIND_SpriteKind" id="dBU{4Uh$;P=`a;`cX73!">Projectile</variable><variable type="KIND_SpriteKind" id="a8IV.8smlMrMiG7Y*TK*">Food</variable><variable type="KIND_SpriteKind" id="5dmd|7vuP#c-}V.JmPw?">Enemy</variable><variable id="{/S65#xqtSW*clmW~`UP">item</variable><variable id="S72N=Rs3#,d5qK:OMlpA">mySprite</variable><variable id="=lbWGkZiJWlR)exxU4`(">mySprite2</variable><variable id="U8,NSy^g}Zr?8@A=H.FL">ASTEROID</variable></variables><block type="pxt-on-start" id="WD/#4eI$UmOofU#JgGll" x="0" y="0"><statement name="HANDLER"><block type="gameSplash" id="@OJpm.-K|G+Mu7is=%p]"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="1" _input_init="true"></mutation><value name="title"><shadow type="text" id="*+S$:bDpF|65gE1^O(+;"><field name="TEXT">BENVINGUTS A L'ESPAI</field></shadow></value><value name="subtitle"><shadow type="text" id="tNQWWBytd-l5`9q`Mh61"><field name="TEXT">SI VOLS SOBREVIURE MATA ELS</field></shadow></value><next><block type="gameSplash" id="BrvV-z4KzrnLhHqcm,f`"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="false"></mutation><value name="title"><shadow type="text" id="-Z;LC`^v,-lSH{sdFJ]#"><field name="TEXT">CLI A PER COMENÇAR I B PER DISPARAR</field></shadow></value><next><block type="variables_set" id="W|NI_8tyrnzlJfF]hW%2"><field name="VAR" id="S72N=Rs3#,d5qK:OMlpA">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id=":YG(]-[LB^yJ[$tHJc8,"><value name="img"><shadow type="screen_image_picker" id="^mT]K.Kmof,pk^.?#JJX"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . 8 . . . . . . . . 
+. . . . . . 6 1 6 . . . . . . . 
+. . . . . . 8 6 8 . . . . . . . 
+. . . . . . 8 6 8 . . . . . . . 
+. . . . . . 8 6 8 . . . . . . . 
+. . . . . 8 8 6 8 8 . . . . . . 
+. . . . 8 8 6 6 6 8 8 . . . . . 
+. . 8 8 8 6 6 6 6 6 8 8 8 . . . 
+. . . . f . . . . . f . . . . . 
+. . . 2 2 2 . . . 2 2 2 . . . . 
+. . . 4 4 4 . . . 4 4 4 . . . . 
+. . . 5 2 5 . . . 5 2 5 . . . . 
+. . . 2 5 2 . . . 2 5 2 . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"^mT]K.Kmof,pk^.?#JJX"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id=".]p|:`}N/7!@DZ0H_CRI"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="spritesetpos" id="JU7RkHZI/o[a.[{zi@f="><value name="sprite"><block type="variables_get" id="HPBBV6$D6E~/]|E[%o*x"><field name="VAR" id="S72N=Rs3#,d5qK:OMlpA">mySprite</field></block></value><value name="x"><shadow type="positionPicker" id="}aj@rq.pO=j/P=*3czzZ"><field name="index">80</field></shadow></value><value name="y"><shadow type="positionPicker" id="42rL{/,f|x]zA/^,^mZ;"><field name="index">50</field></shadow></value><next><block type="game_control_sprite" id="52wk1an[QUeD:W_Q=6+x"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="2" _input_init="true"></mutation><value name="sprite"><block type="variables_get" id="(;}XlYx!w{m}mpKVht%J"><field name="VAR" id="S72N=Rs3#,d5qK:OMlpA">mySprite</field></block></value><value name="vx"><shadow type="spriteSpeedPicker" id="`8zjj^I#oOW0}2KUlmB)"><field name="speed">100</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="8^y[`qBHQ6]_L@$`K@iI"><field name="speed">100</field></shadow></value><next><block type="spritesetsetstayinscreen" id="fQpyy=-4#9=EfH),RY$N"><value name="sprite"><block type="variables_get" id="dShp~gd6ZV`SB*VSEPio"><field name="VAR" id="S72N=Rs3#,d5qK:OMlpA">mySprite</field></block></value><value name="on"><shadow type="toggleOnOff" id="[6c[EYl%o0wA4*-.5NP;"><field name="on">true</field></shadow></value><next><block type="hudSetLife" id="2dvV{^8JVe,-tO`%K.J}"><value name="value"><shadow type="math_number" id="-1#t5{flEi)@p/9)*lnP"><field name="NUM">4</field></shadow></value></block></next></block></next></block></next></block></next></block></next></block></next></block></statement></block><block type="gameupdate" id="tyBBgMaMS6FM^Lo:6eZH" x="-10" y="450"><statement name="HANDLER"><block type="variables_set" id="EFnIBrWT7mH#reLm8r#%"><field name="VAR" id="U8,NSy^g}Zr?8@A=H.FL">ASTEROID</field><value name="VALUE"><shadow type="math_number" disabled="true"><field name="NUM">0</field></shadow><block type="spritescreateprojectilefromside" id="a=aBKoT84-dnhIs-12o0"><value name="img"><shadow type="screen_image_picker" id="wfg(}XWG_=!:VA+,OW!2"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . c c c c c . . . . . . . 
+. . . c a a f f c c c c c . . . 
+. . . c a b c f c a a c a a . . 
+. . c c c c c c c a a c c a . . 
+. . f f f c a c c f f c a c . . 
+. . f f f c a a c f c c c c . . 
+. . a f c c c a a b b c c c . . 
+. . a a c b b a c c c c . . . . 
+. . . a c c c c c . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"wfg(}XWG_=!:VA+,OW!2"}}</data></shadow></value><value name="vx"><shadow type="spriteSpeedPicker" id="Q.`](dJy{s58OTK(ZvZw"><field name="speed">50</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="(801E}_#^ZHfq[Sam+Cn"><field name="speed">50</field></shadow></value></block></value><next><block type="Sprite_blockCombine_change" id="Ppdc3Pr1tzY5c8^ktQ(y"><field name="property">Sprite.x@set</field><value name="mySprite"><block type="variables_get" id="#.u6XzEGog#CZx`V[3#z"><field name="VAR" id="U8,NSy^g}Zr?8@A=H.FL">ASTEROID</field></block></value><value name="value"><shadow type="math_number"><field name="NUM">0</field></shadow><block type="device_random" id="wGD)o5?e.JTz~4Mpbc7r"><value name="min"><shadow type="math_number" id="mO3UboD!^e+s@)r4^KoD"><field name="NUM">0</field></shadow></value><value name="limit"><shadow type="math_number"><field name="NUM">10</field></shadow><block type="scenescreenwidth" id="z6z3]QJDyd+3tS-AGa_]"></block></value></block></value></block></next></block></statement></block></xml>
